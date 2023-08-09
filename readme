@@ -1,0 +1,38 @@
+primero se debe instalar el virtual env (modulos de python)
+
+en la terminal escribir: "py -m pip install virtualenv"
+
+Ahora se debe colcoar ese virtual env que se instalo global
+dentro de la carpeta del proyecto, en este caso PErsonalTutorial
+escribimos: "py -m virtualenv python_modules"
+
+Esto crea una carpeta en el proyecto con laslibrerias y modulos,
+en la carpeta Scritps/activate.bat, darle abrir en el explorador 
+para ejecutar como admin y listo, ahora ahi que arrastar ese archivo 
+a la terminal para que aparezca asi (python_modules) y ver que esta corriendo 
+bien. De otro modo ejecutar estos comando en pawershell.
+Por ultimo si sigue sin aparecer en temrinal ese formato (python_modules),
+descargar la extension "Batch Runner", ir hasta el archivo en VS y darle
+F5 para "correr", asi ya no hay falla.
+-- o click derecho al archivo y open in temrinal integrated --
+
+Despues instalar unos modulos adicionales
+escribir "pip install flask"
+Listo ya funciona bien en el navegdaro y postman con el detalle que al parecer
+no esta tomando la libreria jsonify.
+
+2.- 
+Instalar algunas librerias para la conexion a bases de datos SQL
+"pip install flask-sqlalchemy"
+y luego
+"pip install flask-marshmallow" => para definir esquemas de la DB
+y luego
+"pip install flask-marshmallow-sqlalchemy" => libreria de apoyo
+
+Para conectarnos a mysql se necesita el driver
+"pip install pymysql"
+
+
+
+
+
