@@ -3,7 +3,7 @@ primero se debe instalar el virtual env (modulos de python)
 en la terminal escribir: "py -m pip install virtualenv"
 
 Ahora se debe colcoar ese virtual env que se instalo global
-dentro de la carpeta del proyecto, en este caso PErsonalTutorial
+dentro de la carpeta del proyecto, en este caso PersonalTutorial
 escribimos: "py -m virtualenv python_modules"
 
 Esto crea una carpeta en el proyecto con laslibrerias y modulos,
@@ -27,12 +27,14 @@ Instalar algunas librerias para la conexion a bases de datos SQL
 y luego
 "pip install flask-marshmallow" => para definir esquemas de la DB
 y luego
-"pip install flask-marshmallow-sqlalchemy" => libreria de apoyo
+"pip install marshmallow-sqlalchemy" => libreria de apoyo
 
 Para conectarnos a mysql se necesita el driver
 "pip install pymysql"
 
 
+
+No tomaba las librerias, la solcuion fue instalarlas desd epowershell u otra terminal 
 
 
 

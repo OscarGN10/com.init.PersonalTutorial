@@ -1,0 +1,46 @@
+1.- Crear un entorno virtual:
+    Ir a la carpeta del proyecto y escribir:
+    (windows) creara una carpeta con los modulos de python
+    "py -m venv virtual_env"
+    (mac) creara una carpeta con los modulos de python
+    "python3 -m venv virtual_env"
+
+2.- Se debe activar el entorno virtual:
+    (windows) o darle click derecho y ejectuar como admin
+        deberia aparecer el nombre del entorno vitual en terminal
+        a mi no me aparecio pero si funciono xD (f5 en VisualCode)
+    "virtual_env\Scripts\activate.bat"
+    (mac)
+    "source virtual_env/bin/activate"
+
+3.- Escribir pip list para ver las librerias instaladas:
+    "pip list"
+
+4.- Instalar flask :
+    "pip install flask"
+
+5.- Instalar algunas librerias para la conexion a bases de datos SQL:
+    "pip install flask-sqlalchemy"
+
+6.- Para definir esquemas de la DB:
+    "pip install flask-marshmallow"
+
+7.- Libreria de apoyo:
+    "pip install marshmallow-sqlalchemy" 
+
+8.- Driver de mysql:
+    "pip install pymysql"
+
+Si se queire desactivar el entorno virtual: 
+    en la temirnal solo escribir "deactivate"
+    deberia quitarse el nombre del entorno en parentesis en la temrinal
+Si se quiere eliminar el entorno:
+    windows => rmdir virtual_env /s
+    mac => rm -rf virtual_env/
+
+Para vincular este entorno virtual al PyCharm (similar a VisualCode):
+    Abrir la carpeta del entorno virtual desde ahi y ya te abrira 
+    el proyecto con las nuevas librerias.
+
+
+
