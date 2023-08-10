@@ -55,6 +55,24 @@ def get_categorias():
     # convertir ese result a json (response)
     return jsonify(result)
 
+# metodo GET por ID
+@app.route('/categoria/<id>',methods=['GET'])
+def get_categoria_id(id):
+    categoriaById = Categoria.query.get(id)
+    return categoria_schema.jsonify(categoriaById)
+
+
+#POST insert
+@app.route('/categoria/<id>', methods=['POST'])
+def insert_categoria():
+    cat_nom = request.json['cat_nom']
+    cat_desc = request.json['cat_desc']
+
+    nuevo_registro=Categoria(cat_nom,cat_desc)
+
+    db.session.add(nuevo_registro)
+    db.session.commit()
+    return categoria_schema.jsonify(nuevo_registro)
 
 
 
